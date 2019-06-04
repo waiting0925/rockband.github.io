@@ -21,6 +21,7 @@
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
   <link href="css/myresume.css" rel="stylesheet">
+  <!--<link href="css/JSresume.css" rel="stylesheet">-->
 
 </head>
 
@@ -144,9 +145,12 @@
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
 			
-			<body onload="randomImg();">
-        <div id="my_div" ></div> 
-        </body>
+	 <body onload="randomImg();">
+	  <div style="position: relative; border: 1px solid; width: 200px; height: 120px;">
+        <div style="position: absolute; right: 50; top: 50;"> Manifold</div>
+	   <div id="my_div"></div> 
+	  </div> 
+     </body>
           </form>
 
         </div>
@@ -242,6 +246,5 @@
         document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[imgIndex]+"' width=200 height=200>";
         }       
 </script>
-
 
 

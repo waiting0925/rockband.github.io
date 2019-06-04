@@ -143,6 +143,10 @@
           <form class="form-inline d-flex">
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+			
+			<body onload="randomImg();">
+        <div id="my_div" ></div> 
+        </body>
           </form>
 
         </div>
@@ -167,9 +171,7 @@
           </div>
         </div>
 		
-		<body onload="randomImg();">
-        <div id="my_div" ></div> 
-        </body>
+		
 		
 
         <div class="col-md-4 mb-3 mb-md-0">
@@ -231,9 +233,9 @@
   
  <!--JS照片播放-->
  <script type="text/javascript">
-        var jsImg = new Array("封面草東.jpg","草東.jpg","ipad.png");
+        var jsImg = new Array("封面草東.jpg","草東.jpg","");
         //設定每兩秒執行一次randomImg() ，此行要在 function 之外
-        setInterval("randomImg()",2000);
+        setInterval("randomImg()",1500);
         function randomImg(){
         //陣列的長度 * 介於0~1間數字 ，然後在取 floor 當照片索引值
         var imgIndex = Math.floor(Math.random()*jsImg.length);

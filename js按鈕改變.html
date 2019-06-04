@@ -1,0 +1,36 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box{
+		     width:100px;
+		     height:100px;
+		     background:red;
+	    }
+    </style>
+    <script >
+    	/*
+    	window.onload=functoin(){
+	       頁面中的元素全部加載完後執行這裡的代碼
+    	};
+    	*/
+    	window.onload=function(){
+    		document.getElementById('btn').onclick=function(){
+    		document.getElementById('btn').style.background='red';
+    	};
+    	
+    	};
+    </script>
+</head>
+<body>
+	<input type="button" name="btn" id="btn" value="按鈕名稱">
+	<div id="box"></div>
+    <script >
+    	document.getElementById('btn').onclick=function(){
+    		document.getElementById('btn').style.background='red';
+    	};
+    </script>
+</body>
+</html>

@@ -9,14 +9,12 @@ h4,
 h5,
 h6 {
 	font-family: 'Noto Sans TC', sans-serif;
+		 text-transform: none;
 }
 .subheading{
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
-.bg-primary {
-	background-color: #A9F8FB!important;
-background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-)
-a:hover{color:#AAAAAA}
+p {
+　font-family:serif,sans-serif,cursive,fantasy,monospace;
+}

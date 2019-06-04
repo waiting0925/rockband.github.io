@@ -166,6 +166,11 @@
             </div>
           </div>
         </div>
+		
+		<body onload="randomImg();">
+        <div id="my_div" ></div> 
+        </body>
+		
 
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
@@ -223,7 +228,18 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+  
+ <!--JS照片播放-->
+ <script type="text/javascript">
+        var jsImg = new Array("封面草東.jpg","草東.jpg","ipad.png");
+        //設定每兩秒執行一次randomImg() ，此行要在 function 之外
+        setInterval("randomImg()",2000);
+        function randomImg(){
+        //陣列的長度 * 介於0~1間數字 ，然後在取 floor 當照片索引值
+        var imgIndex = Math.floor(Math.random()*jsImg.length);
+        document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[imgIndex]+"' width=200 height=200>";
+        }       
+</script>
 
-</body>
 
-</html>
+

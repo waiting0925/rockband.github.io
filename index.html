@@ -130,6 +130,13 @@
 
     </div>
   </section>
+<<<<<<< HEAD
+  
+  <!-- photos -->
+  <section id="signup" class="signup-section bg-light">
+  
+  </section>
+=======
 
   <!-- Signup Section -->
   <section id="signup" class="signup-section">
@@ -143,6 +150,10 @@
           <form class="form-inline d-flex">
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+			
+			<body onload="randomImg();">
+        <div id="my_div" ></div> 
+        </body>
           </form>
 
         </div>
@@ -166,6 +177,9 @@
             </div>
           </div>
         </div>
+		
+		
+		
 
         <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
@@ -207,10 +221,11 @@
     </div>
   </section>
 
+>>>>>>> 400587c74d1b3856cb420bd71b15b96d77ce5cf8
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      No Party For Cao Dong
     </div>
   </footer>
 
@@ -223,7 +238,18 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+  
+ <!--JS照片播放-->
+ <script type="text/javascript">
+        var jsImg = new Array("下載 (1).jpg","草東.jpg","下載.jpg");
+        //設定每兩秒執行一次randomImg() ，此行要在 function 之外
+        setInterval("randomImg()",1500);
+        function randomImg(){
+        //陣列的長度 * 介於0~1間數字 ，然後在取 floor 當照片索引值
+        var imgIndex = Math.floor(Math.random()*jsImg.length);
+        document.getElementById("my_div").innerHTML  = "<img src='"+jsImg[imgIndex]+"' width=200 height=200>";
+        }       
+</script>
 
-</body>
 
-</html>
+

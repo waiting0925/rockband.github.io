@@ -188,7 +188,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 2 0 0rem;
-	border-right-style: 0.5rem dotted #64a19d;
+ /*border-right-style: 0.5rem solid #64a19d;*/
   }
 }
 
